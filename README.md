@@ -137,6 +137,16 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
 *   The `advanced` implementation with OpenMP still outperforms the naive baseline significantly.
 *   **Plots:**
 
+    **No OpenMP (Baseline)**  
+    <p float="left">
+      <img src="results_wo_openmp/lu_plots/n_time.png" width="45%" />
+      <img src="results_wo_openmp/lu_plots/n_gflops.png" width="45%" /> 
+    </p>
+    <p float="left">
+      <img src="results_wo_openmp/lu_plots/t_time.png" width="45%" />
+      <img src="results_wo_openmp/lu_plots/t_gflops.png" width="45%" />
+    </p>
+
     **With OpenMP**  
     <p float="left">
       <img src="results_w_omp/lu_omp_plots/n_time.png" width="45%" />
