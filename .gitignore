@@ -1,0 +1,17 @@
+# Binaries
+convolution
+lu
+matmul
+*.o
+*.out
+
+# System files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
