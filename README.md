@@ -28,6 +28,19 @@ hw.perflevel1.l2cachesize: 4194304 (4MB)
 *   **Scripts:** `exp_*.sh` scripts run parameter sweeps (N, T, K) and log results to CSV.
 *   **Plotting:** `plot_results.py` visualizes the CSV data.
 
+## Experiment Parameters
+
+*   **N (Problem Size):** The dimension of the input data.
+    *   For Matrix Multiplication: $N \times N$ matrices.
+    *   For Convolution: $N \times N$ input image.
+    *   For LU Decomposition: $N \times N$ matrix.
+*   **T (Tile Size):** The block size used for cache tiling.
+    *   The loops are blocked into chunks of size $T \times T$ to fit into the L1/L2 cache.
+    *   Optimal $T$ minimizes cache misses.
+*   **K (Kernel Size):** The dimension of the convolution filter.
+    *   Only applicable to Convolution.
+    *   The filter size is $K \times K$.
+
 ## Experiment Settings
 
 We conducted two sets of experiments to evaluate the impact of algorithmic optimizations (Tiling, Register Blocking) and hardware parallelism (OpenMP).
@@ -58,7 +71,7 @@ These experiments leverage the multi-core architecture of the Apple M1.
 
 ## Results & Analysis
 
-Results are organized into `results_wo_openmp/` (single-threaded) and `results_w_omp/` (multi-threaded).
+Results are organized into `results_wo_omp/` (single-threaded) and `results_w_omp/` (multi-threaded).
 
 ### Performance Deep Dive
 
