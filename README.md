@@ -92,11 +92,19 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
       <img src="results_wo_openmp/gemm_plots/n_time.png" width="45%" />
       <img src="results_wo_openmp/gemm_plots/n_gflops.png" width="45%" /> 
     </p>
+    <p float="left">
+      <img src="results_wo_openmp/gemm_plots/t_time.png" width="45%" />
+      <img src="results_wo_openmp/gemm_plots/t_gflops.png" width="45%" />
+    </p>
 
     **With OpenMP**  
     <p float="left">
       <img src="results_w_omp/gemm_omp_plots/n_time.png" width="45%" />
       <img src="results_w_omp/gemm_omp_plots/n_gflops.png" width="45%" />
+    </p>
+    <p float="left">
+      <img src="results_w_omp/gemm_omp_plots/t_time.png" width="45%" />
+      <img src="results_w_omp/gemm_omp_plots/t_gflops.png" width="45%" />
     </p>
 
 ### 2D Convolution
@@ -109,10 +117,19 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
       <img src="results_w_omp/convolution_omp_plots/n_time.png" width="45%" />
       <img src="results_w_omp/convolution_omp_plots/n_gflops.png" width="45%" />
     </p>
+    <p float="left">
+      <img src="results_w_omp/convolution_omp_plots/t_time.png" width="45%" />
+      <img src="results_w_omp/convolution_omp_plots/t_gflops.png" width="45%" />
+    </p>
 
     **Kernel Size Sweep (No OMP)**  
     <p float="left">
       <img src="results_wo_openmp/convolution_plots/k_gflops.png" width="45%" />
+      <img src="results_wo_openmp/convolution_plots/k_time.png" width="45%" />
+    </p>
+    <p float="left">
+      <img src="results_wo_openmp/convolution_plots/t_time.png" width="45%" />
+      <img src="results_wo_openmp/convolution_plots/t_gflops.png" width="45%" />
     </p>
 
 ### LU Decomposition
@@ -124,6 +141,10 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
     <p float="left">
       <img src="results_w_omp/lu_omp_plots/n_time.png" width="45%" />
       <img src="results_w_omp/lu_omp_plots/n_gflops.png" width="45%" />
+    </p>
+    <p float="left">
+      <img src="results_w_omp/lu_omp_plots/t_time.png" width="45%" />
+      <img src="results_w_omp/lu_omp_plots/t_gflops.png" width="45%" />
     </p>
 
 ## How to Run
