@@ -87,30 +87,44 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
 *   **Impact of OpenMP:** The parallel `advanced` implementation achieves the highest throughput, scaling well with problem size.
 *   **Plots:**
 
-**No OpenMP (Baseline)**
-![Runtime vs N (No OMP)](results_wo_openmp/gemm_plots/n_time.png) ![GFLOP/s vs N (No OMP)](results_wo_openmp/gemm_plots/n_gflops.png)
+    **No OpenMP (Baseline)**  
+    <p float="left">
+      <img src="results_wo_openmp/gemm_plots/n_time.png" width="45%" />
+      <img src="results_wo_openmp/gemm_plots/n_gflops.png" width="45%" /> 
+    </p>
 
-**With OpenMP**
-![Runtime vs N (OMP)](results_w_omp/gemm_omp_plots/n_time.png) ![GFLOP/s vs N (OMP)](results_w_omp/gemm_omp_plots/n_gflops.png)
+    **With OpenMP**  
+    <p float="left">
+      <img src="results_w_omp/gemm_omp_plots/n_time.png" width="45%" />
+      <img src="results_w_omp/gemm_omp_plots/n_gflops.png" width="45%" />
+    </p>
 
 ### 2D Convolution
 *   **Kernel Size (K):** Performance scales with kernel size. Larger kernels offer more arithmetic intensity.
 *   **Parallelism:** OpenMP provides a near-linear speedup for the `advanced` implementation, reaching ~20+ GFLOP/s on the M1.
 *   **Plots:**
 
-**With OpenMP**
-![Runtime vs N (OMP)](results_w_omp/convolution_omp_plots/n_time.png) ![GFLOP/s vs N (OMP)](results_w_omp/convolution_omp_plots/n_gflops.png)
+    **With OpenMP**  
+    <p float="left">
+      <img src="results_w_omp/convolution_omp_plots/n_time.png" width="45%" />
+      <img src="results_w_omp/convolution_omp_plots/n_gflops.png" width="45%" />
+    </p>
 
-**Kernel Size Sweep (No OMP)**
-![GFLOP/s vs K](results_wo_openmp/convolution_plots/k_gflops.png)
+    **Kernel Size Sweep (No OMP)**  
+    <p float="left">
+      <img src="results_wo_openmp/convolution_plots/k_gflops.png" width="45%" />
+    </p>
 
 ### LU Decomposition
 *   LU factorization is more challenging to parallelize due to data dependencies.
 *   The `advanced` implementation with OpenMP still outperforms the naive baseline significantly.
 *   **Plots:**
 
-**With OpenMP**
-![Runtime vs N (OMP)](results_w_omp/lu_omp_plots/n_time.png) ![GFLOP/s vs N (OMP)](results_w_omp/lu_omp_plots/n_gflops.png)
+    **With OpenMP**  
+    <p float="left">
+      <img src="results_w_omp/lu_omp_plots/n_time.png" width="45%" />
+      <img src="results_w_omp/lu_omp_plots/n_gflops.png" width="45%" />
+    </p>
 
 ## How to Run
 
