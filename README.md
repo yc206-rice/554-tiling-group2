@@ -89,12 +89,12 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
 
     **No OpenMP (Baseline)**  
     <p float="left">
-      <img src="results_wo_openmp/gemm_plots/n_time.png" width="45%" />
-      <img src="results_wo_openmp/gemm_plots/n_gflops.png" width="45%" /> 
+      <img src="results_wo_omp/gemm_plots/n_time.png" width="45%" />
+      <img src="results_wo_omp/gemm_plots/n_gflops.png" width="45%" /> 
     </p>
     <p float="left">
-      <img src="results_wo_openmp/gemm_plots/t_time.png" width="45%" />
-      <img src="results_wo_openmp/gemm_plots/t_gflops.png" width="45%" />
+      <img src="results_wo_omp/gemm_plots/t_time.png" width="45%" />
+      <img src="results_wo_omp/gemm_plots/t_gflops.png" width="45%" />
     </p>
 
     **With OpenMP**  
@@ -114,16 +114,16 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
 
     **No OpenMP (Baseline)**  
     <p float="left">
-      <img src="results_w_omp/convolution_plots/n_time.png" width="45%" />
-      <img src="results_w_omp/convolution_plots/n_gflops.png" width="45%" />
+      <img src="results_wo_omp/convolution_plots/n_time.png" width="45%" />
+      <img src="results_wo_omp/convolution_plots/n_gflops.png" width="45%" />
     </p>
     <p float="left">
-      <img src="results_wo_openmp/convolution_plots/t_time.png" width="45%" />
-      <img src="results_wo_openmp/convolution_plots/t_gflops.png" width="45%" />
+      <img src="results_wo_omp/convolution_plots/t_time.png" width="45%" />
+      <img src="results_wo_omp/convolution_plots/t_gflops.png" width="45%" />
     </p>
     <p float="left">
-      <img src="results_wo_openmp/convolution_plots/k_gflops.png" width="45%" />
-      <img src="results_wo_openmp/convolution_plots/k_time.png" width="45%" />
+      <img src="results_wo_omp/convolution_plots/k_gflops.png" width="45%" />
+      <img src="results_wo_omp/convolution_plots/k_time.png" width="45%" />
     </p>
 
     **With OpenMP**  
@@ -136,8 +136,8 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
       <img src="results_w_omp/convolution_omp_plots/t_gflops.png" width="45%" />
     </p>
     <p float="left">
-      <img src="results_wo_openmp/convolution_omp_plots/k_gflops.png" width="45%" />
-      <img src="results_wo_openmp/convolution_omp_plots/k_time.png" width="45%" />
+      <img src="results_w_omp/convolution_omp_plots/k_gflops.png" width="45%" />
+      <img src="results_w_omp/convolution_omp_plots/k_time.png" width="45%" />
     </p>
 
 ### LU Decomposition
@@ -147,12 +147,12 @@ This trend is clearly visible in **Matrix Multiplication** and **Convolution** f
 
     **No OpenMP (Baseline)**  
     <p float="left">
-      <img src="results_wo_openmp/lu_plots/n_time.png" width="45%" />
-      <img src="results_wo_openmp/lu_plots/n_gflops.png" width="45%" /> 
+      <img src="results_wo_omp/lu_plots/n_time.png" width="45%" />
+      <img src="results_wo_omp/lu_plots/n_gflops.png" width="45%" /> 
     </p>
     <p float="left">
-      <img src="results_wo_openmp/lu_plots/t_time.png" width="45%" />
-      <img src="results_wo_openmp/lu_plots/t_gflops.png" width="45%" />
+      <img src="results_wo_omp/lu_plots/t_time.png" width="45%" />
+      <img src="results_wo_omp/lu_plots/t_gflops.png" width="45%" />
     </p>
 
     **With OpenMP**  
